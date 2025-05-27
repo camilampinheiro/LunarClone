@@ -1,3 +1,71 @@
 section.features-display {
-  
+  max-width: 100vw;
+  margin-inline: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  & figure {
+    position: relative;
+    overflow: hidden;
+    line-height: 0;
+
+    & > img {
+      width: 25rem;
+      height: 25rem;
+      object-fit: cover;
+      transition: scale 500ms;
+    }
+
+    &:hover {
+      & > img {
+        scale: 1.1;
+      }
+
+      & figcaption {
+        scale: 1.1;
+      }
+    }
+  }
+
+  & figcaption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+
+    position: absolute;
+    bottom: 7rem;
+    width: 100%;
+
+    transition: scale 500ms;
+
+    & span {
+      font: var(--text-base) var(--ff-text);
+      font-style: italic;
+      letter-spacing: .25rem;
+      text-transform: uppercase;
+      font-weight: 500;
+      text-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    & h2 {
+      display: flex;
+      text-align: center;
+      font: 3.2rem var(--ff-title);
+      text-transform: uppercase;
+      font-weight: 800;
+      text-shadow: 0 3px 0 rgba(0, 0, 0, 0.33);
+    }
+  }
+
+  & figure:nth-child(1) {
+    border-radius: 2.5rem 0 0 2.5rem;
+  }
+
+    & figure:nth-child(4) {
+    border-radius: 0 2.5rem 2.5rem 0;
+  }
 }

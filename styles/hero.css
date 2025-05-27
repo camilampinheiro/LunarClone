@@ -7,7 +7,7 @@ section.hero {
   justify-content: center;
   text-align: center;
 
-  padding: 10rem 0 20rem 0;
+  padding: 10rem 0 12rem 0;
 
   & img {
     width: 12.5rem;
