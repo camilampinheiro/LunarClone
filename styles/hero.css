@@ -1,0 +1,67 @@
+section.hero {
+  /* max-width: 22.5rem; */
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 10rem 0 20rem 0;
+
+  & img {
+    width: 12.5rem;
+    margin-bottom: 1rem;
+  }
+
+  & h2 {
+    font: 3.125rem var(--ff-title);
+    font-weight: 800; 
+  }
+
+  & p {
+    font: var(--text-base) var(--ff-text);
+    font-weight: 200;
+    letter-spacing: 0.75px;
+  }
+
+  & .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  & button {
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    margin-top: 1rem;
+
+    font: var(--text-base) var(--ff-text);
+    font-weight: 800;
+    color: #FFFFFF; 
+
+    & a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+    }
+  }
+
+  & #btn-download {
+    background-color: #368BAF;
+    padding: .625rem .9375rem;
+  }
+
+  & #btn-store {
+    background-color: #E6913D;
+    padding: .625rem 2rem;
+  }
+
+  & ion-icon {
+    font-size: 1.5rem;
+  }
+}
+

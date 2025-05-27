@@ -1,0 +1,68 @@
+header.top {
+  /* max-width: 22.5rem; */
+  width: 100%;
+  padding-left: 1.5rem;
+  height: 7rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: var(--bg-header);
+
+  & #logo {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    & img {
+      width: 3.375rem;
+    }
+
+    & h1 {
+      font: var(--text-xl) var(--ff-text);
+      font-weight: 700;
+    }
+  }
+
+  & ion-icon {
+    font-size: 1.7rem;
+    cursor: pointer;
+  }
+
+  & button {
+    border: none;
+    color: var(--text);
+
+    font: var(--text-xl) var(--ff-text);
+    font-weight: 600;
+
+    padding-inline: 2.8125rem;
+    height: 6.95rem;
+  }
+
+  & #btn-download {
+    background-color: #D2595A;
+    cursor: pointer;
+  }
+
+  & #btn-menu {
+    background: none;
+    border: 1px solid var(--text);
+    border: none;
+    cursor: pointer;
+
+    & a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
+
+  & .menu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}

@@ -1,0 +1,22 @@
+nav {
+  /* max-width: 22.5rem; */
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  background: rgba(9, 4, 0, 0.45);;
+
+  & a {
+    font: var(--text-base) var(--ff-title);
+    font-weight: 800;
+    
+    padding: 1rem;
+/* 
+    &:hover {
+      color: grey;
+    } */
+  }
+}
