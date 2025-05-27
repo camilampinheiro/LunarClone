@@ -26,8 +26,6 @@
 html, body {
   color: var(--text);
   background: var(--bg-section);
-
-  position: relative;
 }
 
 .bg-hero {
